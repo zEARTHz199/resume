@@ -1,0 +1,102 @@
+body {
+  margin:0;
+  background-image: url(pic/miku.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.sitemap_container {
+  /* border: 1px solid red; */
+  margin: 0px 15% 0px;
+  padding: 15px 15px 15px;
+}
+
+/* .navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+} */
+
+.header1 { grid-area: header1; }
+
+.gridleft { grid-area: gridleft; }
+.gridright { grid-area: gridright; }
+
+.gridpic { grid-area: gridpic; }
+.grid1 { grid-area: grid1; }
+.grid2 { grid-area: grid2; }
+.grid3 { grid-area: grid3; }
+.grid4 { grid-area: grid4; }
+
+.gridprofile1{grid-area: gridprofile1;}
+
+.gridskill{grid-area: gridskill;}
+
+.gridcontact{grid-area: gridcontact;}
+
+.footer1 { grid-area: footer1; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'gridpic grid1'
+    'gridprofile1 grid1'
+    'gridprofile1 gridskill';
+  grid-gap: 5px;
+  /* background-color: #2196F3; */
+  padding: 0px;
+}
+  
+.grid-container > div {
+  background-color: white;
+  text-align: center;
+  padding: 0px 10px;
+  font-size: 30px;
+  justify-content: center;
+}
+
+.alignleft{
+  text-align: left;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  /* background-color: black; */
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
